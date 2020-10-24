@@ -15,6 +15,7 @@ function! s:gitpush()
     execute ':silent !'.s:gitc.'add '.s:filet | execute ':redraw!'
     execute ':silent !'.s:gitc.'commit -m "'.l:msg.s:filet.'"' | execute ':redraw!'
     execute ':silent !'.s:gitc.'push '.s:thisrepo.' '.s:currentbranch | execute ':redraw!'
+    return 0
 endfunction
 
 if exists("g:loaded_git_vim_plugin")
