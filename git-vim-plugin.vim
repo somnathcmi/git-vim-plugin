@@ -17,6 +17,13 @@ function! s:gitpush()
     execute ':silent !'.s:gitc.'push '.s:thisrepo.' '.s:currentbranch | execute ':redraw!'
 endfunction
 
+if exists("g:loaded_git_vim_plugin")
+    echo "Already loaded"
+    finish
+endif
+
+let g:loaded_git_vim_plugin = 1
+
 command! MyGitPush call s:gitpush()
 
 "command! MyGitPush execute ''
