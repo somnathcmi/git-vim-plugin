@@ -2,6 +2,10 @@
 
 You can use the [editor on GitHub](https://github.com/somnathcmi/git-vim-plugin/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
+Here is an example of basic latex like equations
+
+$$ (a+b)^n = \sum_{i=0}^n (n,i) a^ib^{n-i} $$
+
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
